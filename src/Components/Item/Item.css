@@ -1,0 +1,55 @@
+.item-container-2 {
+    width: 33% ; /* 25% width minus the 20px margin on both sides */
+    box-sizing: border-box; /* Include padding and border in the item's total width */
+    float: left; /* Float items to achieve side-by-side layout */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+/* Item.css */
+.item-container {
+    width: 25%; /* 25% width minus the 20px margin on both sides */
+    box-sizing: border-box; /* Include padding and border in the item's total width */
+    float: left; /* Float items to achieve side-by-side layout */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+  
+.item-container img, .item-container-2 img {
+    width: 100%; /* Ensure images take full width of their containers */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent any whitespace from rendering around the image */
+}
+  
+
+
+.item_desc {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items at the start of the container */
+    height: 30px; /* Set a specific height */
+}
+.item-name {
+    font-weight: bold;
+}
+  
+.item_desc p {
+    flex: 1; /* Allow the paragraph to grow to fill remaining space */
+    margin-right: 10px; /* Add spacing between the paragraph and image */
+    margin-top: 0px;
+    color: rgb(120, 117, 117);
+}
+  
+.item_desc img {
+    width: 20px; /* Set width of the image */
+    height: 20px; /* Set height of the image */
+}
+
+.heart-icon {
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.heart-icon:hover {
+    filter: brightness(0.8); /* Reduce brightness on hover */
+}
