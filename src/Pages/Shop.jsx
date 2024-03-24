@@ -25,7 +25,7 @@ const Shop = () => {
         <p className='total-items'>3425 ITEMS</p>
         <div className='hide_show_filter' onClick={toggleSidebar}>
           <img src={arrow_left} alt="" />
-          <p>HIDE FILTER</p>
+          <p>{showSidebar ? 'HIDE FILTER' : 'SHOW FILTER'}</p>
         </div>
         <div className='recommended' onClick={toggleOptions}>
           <p>Recommended</p>
